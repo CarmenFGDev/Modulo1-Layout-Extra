@@ -1,0 +1,22 @@
+{
+  "name": "modulo1-layout-extra",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarmenFGDev/Modulo1-Layout-Extra.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarmenFGDev/Modulo1-Layout-Extra/issues"
+  },
+  "homepage": "https://github.com/CarmenFGDev/Modulo1-Layout-Extra#readme",
+  "devDependencies": {
+    "sass": "^1.58.3"
+  }
+}
