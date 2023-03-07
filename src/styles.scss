@@ -16,12 +16,9 @@ body {
   flex-direction: column;
 }
 .header {
-  /// position:relative;
-  // top:0px;
   display: flex;
   flex-direction: column;
   & > .toolbar {
-    // position:fixed;
     padding: 10px;
     font-size: 0.8em;
     font-weight: bold;
@@ -35,22 +32,18 @@ body {
   }
 
   & > .page-title {
-    // position:fixed;
     padding: 10px;
     background-color: $background__title;
     color: $color__title;
   }
 }
 .page-container {
-  //position: relative;
   flex: 1;
-  // overflow: auto;
   display: grid;
   grid-template-columns: 200px 1fr;
   grid-template-rows: auto;
   grid-template-areas: "menu list";
   & nav {
-    //position: sticky;
     top: 0;
   }
   @media screen and (max-width: 768px) {
@@ -59,18 +52,19 @@ body {
     grid-template-areas:
       "menu"
       "list";
+      & nav {
+        position: sticky;
+        top: 0;
+      }
   }
 }
 .menu-container {
-  // overflow: auto;
-  // position:relative;
   grid-area: "menu";
   background-color: $background__menu;
   height: 100%;
   display: flex;
   flex-direction: column;
   & > .menu-title {
-    //position:fixed;
     text-transform: uppercase;
     text-align: center;
     margin-top: 8px;
@@ -88,7 +82,6 @@ body {
     @media screen and (max-width: 768px) {
       flex-direction: row;
       justify-content: space-around;
-      ///position:sticky;
       top: 0px;
       z-index: 10;
     }
